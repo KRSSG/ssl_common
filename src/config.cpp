@@ -27,8 +27,8 @@ const float MOVING_BALL_VELOCITY       = SELECT(40, 30);
 const float MIN_DIST_FROM_TARGET       = SELECT(30.0, 25.0);
 const int CENTER_X                     = SELECT(0, 0);
 const int CENTER_Y                     = SELECT(0, 0);
-const int HALF_FIELD_MAXX              = SELECT(2700, 2975); //actual 225 (rugged surface at end)
-const int HALF_FIELD_MAXY              = SELECT(1900, 2050);
+const int HALF_FIELD_MAXX              = SELECT(3000, 2975); //actual 225 (rugged surface at end)
+const int HALF_FIELD_MAXY              = SELECT(2000, 2050);
 
 const int OUR_GOAL_MAXY                = SELECT(600,600);
 const int OUR_GOAL_MINY                = SELECT(-600, -600);
@@ -49,8 +49,8 @@ const float RFACTOR_SMALL              = SELECT(0.6, 0.15);
 
 const int CLEARANCE_PATH_PLANNER       = SELECT(500, 300);               //mm
 const int MID_FIELD_THRESH             = SELECT(10, 150);                       // mm
-const float BOT_RADIUS                 = SELECT(70, 150);                       // mm
-const float BALL_RADIUS                = SELECT(40, 40);                       // mm
+const float BOT_RADIUS                 = SELECT(90, 150);                       // mm
+const float BALL_RADIUS                = SELECT(21.5, 40);                       // mm
 const float SAFE_RADIUS                = (BOT_RADIUS * 2);
 const float COLLISION_DIST             = (BOT_RADIUS * 7);
 const int DRIBBLER_BALL_THRESH         = SELECT(110, 500);            // mm
