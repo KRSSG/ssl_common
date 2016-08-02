@@ -1,4 +1,5 @@
 #include <config.h>
+
 #if SIM_COMM || GR_SIM_COMM // Parameters for the simulator
 # define SELECT(sim_param, ssl_param) (sim_param)
 #elif SSL_COMM || FIRA_COMM || FIRASSL_COMM// Parametres for the real bots
@@ -70,6 +71,7 @@ const float MAX_WHEEL_SPEED            = SELECT(2000, 100);                 //mm
 const float MAX_BOT_LINEAR_ACC         = SELECT(1000, 100);                // mm/s/s
 const float MAX_BOT_LINEAR_VEL_CHANGE  = SELECT(10, 3);
 const float MAX_BOT_SPEED              = SELECT(1800, 80.0);                 // mm
+const float MAX_BALL_SPEED              = SELECT(3600, 160.0);                 // mm/s
 const float MIN_BOT_SPEED              = SELECT(5, 30);                     // mm/s
 const float MAX_BOT_OMEGA              = SELECT(7, 100);                     // rad/s//2
 const float MIN_BOT_OMEGA              = SELECT(0.15, 0.15);                     // rad/s

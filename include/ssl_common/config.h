@@ -16,8 +16,8 @@ extern const int CENTER_Y                     ;
 extern const int HALF_FIELD_MAXX              ; //actual 225 (rugged surface at end)
 extern const int HALF_FIELD_MAXY              ;
 
-#define OUR_GOAL_X                            ForwardX(-HALF_FIELD_MAXX)
-#define OPP_GOAL_X                            ForwardX(HALF_FIELD_MAXX)
+#define OUR_GOAL_X                            -HALF_FIELD_MAXX
+#define OPP_GOAL_X                            HALF_FIELD_MAXX
 
 extern const int OUR_GOAL_MAXY                ;
 extern const int OUR_GOAL_MINY                ;
@@ -62,6 +62,7 @@ extern const float MAX_BOT_LINEAR_ACC         ;                // mm/s/s
 extern const float MAX_BOT_LINEAR_VEL_CHANGE  ;
 extern const float MAX_BOT_SPEED              ;                 // mm
 extern const float MIN_BOT_SPEED              ;                     // mm/s
+extern const float MAX_BALL_SPEED              ;                     // mm/s
 extern const float MAX_BOT_OMEGA              ;                     // rad/s//2
 extern const float MIN_BOT_OMEGA              ;                     // rad/s
 extern const float MAX_BACK_DRIBBLE_V_Y       ;                  // mm/s
